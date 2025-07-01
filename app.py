@@ -5,7 +5,8 @@ import pickle
 import os
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
+CORS(app, origins=["https://ipl-buddy-frontend.onrender.com"])
 
 model = None
 scaler = None
