@@ -6,7 +6,11 @@ import os
 
 app = Flask(__name__)
 # CORS(app)
-CORS(app, origins=["https://ipl-buddy-frontend.onrender.com"])
+CORS(app, 
+     origins=["https://ipl-buddy-frontend.onrender.com", "http://localhost:3000", "http://127.0.0.1:3000"],
+     methods=["GET", "POST", "OPTIONS"],
+     allow_headers=["Content-Type"],
+     supports_credentials=True)
 
 model = None
 scaler = None
