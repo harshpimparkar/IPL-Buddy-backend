@@ -1,0 +1,11 @@
+/venv
+./venv/
+# Python cache files    
+__pycache__/
+*.py[cod]
+# Distribution / packaging
+.Python
+build/  
+./csv
+/csv
+matches.csv
